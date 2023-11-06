@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .attribution a {
+        text-decoration: none;
+      }
+    </style>
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body
+    class="p-3 bg-darkBlue font-Manrope min-h-screen flex justify-center items-center relative"
+  >
+    <div
+      class="relative rounded-lg flex flex-col space-y-4 justify-center items-center text-center w-full max-w-xs p-5 pb-10 bg-darkGrayishBlue font-bold"
+    >
+      <span class="text-neonGreen text-xs uppercase tracking-widest"
+        >Advice #<span id="advice-id"></span
+      ></span>
+      <p id="advice" class="text-white/80 text-lg">
+        "It's easy to sit up and take notice. What is difficult is getting up
+        and taking action."
+      </p>
+      <img
+        src="./images/pattern-divider-desktop.svg"
+        alt="pattern-divider-desktop"
+      />
+      <button
+        class="cursor-pointer hover:shadow-[1px_1px_20px_1px_rgba(102,225,102,1)] absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] bg-neonGreen p-3 rounded-full"
+      >
+        <img src="./images/icon-dice.svg" alt="" />
+      </button>
+    </div>
+
+    <div class="attribution text-neonGreen">
+      Coded by <a href="#">Johnny</a>.
+    </div>
+  </body>
+</html>
